@@ -53,14 +53,14 @@ table {
 
 
 
-/* ---------- Hello, my name is YOUR NAME GOES HERE and this is the beginning of my CONTACT PAGE CSS for 318 Digital Typography November 2019 ------------ */
+/* ---------- Hello, my name is Andrew Herby and this is the beginning of my CONTACT PAGE CSS for 318 Digital Typography November 2019 ------------ */
 
 html, body {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #404040; 
+  background: url(images/Bricks%20Yellow.jpg)
 	
 	
 }
@@ -82,27 +82,58 @@ html, body {
 }
 
 h1 {
-	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 2em;
+    margin: 0px auto 10px auto;
+    color: #fff;
+    }
+
+h2 {
+	font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 2em;
+    margin: 0px auto 10px auto;
+    color: #fff;
+    }
+
+p {
+	font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: #fff;
 }
-
-h2 {
-	 /* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
-	font-size: 1.5em;
-    line-height: 1.4;
-    color: #fff;
-    padding: 0px 0px;
-    margin: 0px auto 25px auto;
-}
-
-p {
-	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */		;
+nav{
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 	font-size: 1.2em;
-    line-height: 1.6;
+    width: 400px;
+    margin: 0px auto;
+    border: dashed turquoise;
+    border width: 3px 0;
     color: #fff;
-}
-    
-    
+    text-align: center;
+    }   
+
+nav li{
+    display:inline;
+    }
+nav a{
+    display:inline-block;
+    padding: 10px;
+    }
+a{
+    color:chartreuse;
+    text-decoration: none;
+    font-weight: bold;
+    }
+a:hover{
+    color:black;
+    background:pink;
+    }
 

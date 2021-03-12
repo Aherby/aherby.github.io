@@ -56,11 +56,11 @@ table {
 /* ---------- Hello, my name is Andrew Herby and this is the beginning of my CONTACT PAGE CSS for 318 Digital Typography November 2019 ------------ */
 
 html, body {
-  height: 100%;
+  height: 00%;
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/Bricks%20Yellow.jpg)
+  background: url(images/winterpark2.jpeg)
 	
 	
 }
@@ -69,15 +69,21 @@ html, body {
     width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(192,192, 192, .50); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	border: 0px solid transparent;
 }
-
+  #triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid red;
+    }
    
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin-bottom: 15px;
+	border: 3px solid transparent;
 	text-align: center;
 }
 
@@ -104,7 +110,7 @@ p {
     font-weight: 400;
     font-style: normal;
 	font-size: 1.2em;
-    margin: 0px auto 10px auto;
+    margin: 10px auto 10px auto;
     color: #fff;
 }
 nav{
@@ -113,10 +119,10 @@ nav{
     font-style: normal;
 	font-size: 1.2em;
     width: 400px;
-    margin: 0px auto;
-    border: dashed turquoise;
-    border width: 3px 0;
-    color: #fff;
+    margin: 85px auto;
+    border: color:white;
+    border width: 5px 0;
+    color: transparent;
     text-align: center;
     }   
 
@@ -125,15 +131,17 @@ nav li{
     }
 nav a{
     display:inline-block;
+    border: color:black;
+    border width: 1px;
     padding: 10px;
     }
 a{
-    color:chartreuse;
+    color:ghostwhite;
     text-decoration: none;
     font-weight: bold;
     }
 a:hover{
     color:black;
-    background:pink;
+    background:color=(169, 169, 169, ;
     }
 

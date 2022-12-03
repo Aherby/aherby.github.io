@@ -92,6 +92,7 @@ footer {
 		grid-gap: 0.5rem;
 		margin: 0.5rem;
 		list-style-type: none;
+		max-width: 75em;
 	}
 
 	h1 {

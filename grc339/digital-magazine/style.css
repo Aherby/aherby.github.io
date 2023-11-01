@@ -1,0 +1,74 @@
+/*CSS document*/
+
+body {
+  background-color: #232527;
+}
+nav {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav ul li a {
+  color: rgb(240, 240, 240);
+  list-style-type: none;
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+a:hover {
+  color: #374b4c;
+}
+
+div.container {
+  max-width: 50em;
+  min-width: 10em;
+  margin: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+h1,h2,h3 {
+  text-align: left;
+  color: rgb(240, 240, 240);
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+	font-size: 26px;
+}
+p {
+  color: rgb(240, 240, 240);
+  max-width: 36em;
+  min-width: 10em;
+  font-family: "termina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 18px
+}
+figcaption {
+  color: rgb(240, 240, 240);
+}
+a {
+  text-decoration: none;
+}
+.mainstory{
+  padding-bottom: 1.5em;
+}
+.Secondarystories {
+  background-color: #827d7a;
+  padding: 1em;
+}
+footer {
+  background-color: #827d7a;
+  padding: 1em;
+}

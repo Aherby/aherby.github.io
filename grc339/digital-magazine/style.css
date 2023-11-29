@@ -9,17 +9,17 @@ body {
 }
 
 nav {
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 1;
+  padding: 0;
 }
 nav ul li {
   display: inline;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 nav ul li a {
@@ -28,14 +28,14 @@ nav ul li a {
   font-family: "termina", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 13px;
 }
 
 a:hover {
   color: #374b4c;
 }
-
-header {
-  /*	background-color: aqua*/
+ h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 figure {
   margin: 0;
@@ -77,10 +77,6 @@ label {
   padding-bottom: 1rem;
 }
 
-figcaption {
-  color: rgb(240, 240, 240);
-}
-
 a {
   text-decoration: none;
 }
@@ -93,9 +89,71 @@ section {
   max-width: 40em;
   margin: 0 auto;
 }
-firgure {
-  margin: 0;
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9),
+input:nth-of-type(10):checked ~ main figure:nth-of-type(10),
+input:nth-of-type(11):checked ~ main figure:nth-of-type(11),
+input:nth-of-type(12):checked ~ main figure:nth-of-type(12){
+    opacity: 1;
 }
+
+main.gallery {
+    position: relative;
+	overflow: auto;
+    padding-bottom: calc(40%);
+}
+
+main.gallery figure {
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+main.gallery figcaption {
+    color: rgb(240, 240, 240);
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+ margin: auto;
+}
+nav.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1em 0em;
+    grid-gap: 0.2em;
+}
+h3.gallery{
+   color: rgb(240, 240, 240);
+  text-decoration: none;
+  font-family: "termina", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+}
+
+div.gallery input {
+    display: none;
+}
+input[name="item"] {
+    display: none;
+}
+
+figure.gallery img{
+		width: 40em;
+		height: 25em;
+		flex: 1 0 10em;
+		object-fit: cover;
+	}
 @media screen and (min-width: 60em) {
   div.container {
     grid-template-columns: 3fr 1fr;
@@ -153,7 +211,12 @@ firgure {
   section.mainstory figure figcaption {
     flex: 0 0 3rem;
   }
-
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
+    opacity: 1;
+}
   article {
     grid-column: 1/2;
     padding-left: 1em;
@@ -161,4 +224,24 @@ firgure {
   footer {
     padding-left: 0.75em;
   }
+@media screen and (prefers-color-scheme: light)
+{
+	body{
+		background-color: rgb(240, 240, 240);
+		color: #232527;}
+	h1 {  
+    background-image: url("mblogo copy.png");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }
+	h1 img {  
+    opacity: 0;  
+    }
+	p, h2, h3, h4, h5, h6, figcaption{
+		color: #232527 
+	}
+	
+}
+
+	
 }

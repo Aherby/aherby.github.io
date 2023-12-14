@@ -37,6 +37,7 @@ a:hover {
  h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
 figure {
   margin: 0;
 }
@@ -51,7 +52,7 @@ ul {
 }
 h1 {
   width: 7em;
-  padding-left: 0.75em;
+  margin-left: 0.5em;
 }
 h1,
 h2,
@@ -96,26 +97,29 @@ input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
 input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
 input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
 input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
-input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
-input:nth-of-type(9):checked ~ main figure:nth-of-type(9),
-input:nth-of-type(10):checked ~ main figure:nth-of-type(10),
-input:nth-of-type(11):checked ~ main figure:nth-of-type(11),
-input:nth-of-type(12):checked ~ main figure:nth-of-type(12){
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
     opacity: 1;
 }
 
+h2 {
+    margin-left: 0.5em;
+}
 main.gallery {
     position: relative;
 	overflow: auto;
-    padding-bottom: calc(40%);
+    padding-bottom: calc(60%);
+	height:25%;
+	
+	
 }
 
 main.gallery figure {
     margin: 0;
-    width: calc(100%-2em);
+    width: flex;
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
+	padding-left: 1em;
 }
 
 main.gallery figcaption {
@@ -131,6 +135,7 @@ nav.gallery {
     grid-template-columns: repeat(4, 1fr);
     margin: 1em 0em;
     grid-gap: 0.2em;
+	margin-left: 1em;
 }
 h3.gallery{
    color: rgb(240, 240, 240);
@@ -140,18 +145,16 @@ h3.gallery{
   font-style: normal;
   font-size: 13px;
 }
-
 div.gallery input {
     display: none;
 }
 input[name="item"] {
     display: none;
 }
-
 figure.gallery img{
-		width: 40em;
-		height: 25em;
-		flex: 1 0 10em;
+		width: 50em;
+		height: 50em;
+		flex: 1 0 40em;
 		object-fit: cover;
 	}
 @media screen and (min-width: 60em) {
@@ -224,6 +227,9 @@ input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
   footer {
     padding-left: 0.75em;
   }
+	.newsletter{
+		margin-left:0.5em;
+	}
 @media screen and (prefers-color-scheme: light)
 {
 	body{
@@ -237,11 +243,9 @@ input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
 	h1 img {  
     opacity: 0;  
     }
-	p, h2, h3, h4, h5, h6, figcaption{
+	p, h2, h3, h4, h5, h6, figcaption, li, ul, nav ul li a, main.gallery figcaption, label{
 		color: #232527 
 	}
 	
-}
-
-	
+}	
 }
